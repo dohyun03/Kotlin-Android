@@ -89,6 +89,15 @@
         android:text="메모장 >"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:backgroundTint="#FDA95A"
+        android:text="낙서장 >"
+        android:textSize="18sp" />
 
 </LinearLayout>

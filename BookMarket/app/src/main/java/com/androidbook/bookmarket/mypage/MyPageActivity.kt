@@ -40,6 +40,8 @@ class MyPageActivity : AppCompatActivity() {
     var requestCode : Int = 0
 
 
+    lateinit var canvasObj : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -133,6 +135,14 @@ class MyPageActivity : AppCompatActivity() {
                 editor.putString("filename", result.data?.data.toString())
                 editor.apply()
             }
+
+
+        }
+        canvasObj = findViewById(R.id.canvas)
+        canvasObj.setOnClickListener {
+
+            val intent = Intent(this, PaintActivity::class.java)
+            startActivity(intent)
 
 
         }

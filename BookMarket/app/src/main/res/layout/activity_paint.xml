@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBlack"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_color_black" />
+
+        <ImageButton
+            android:id="@+id/btnRed"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_color_red" />
+
+        <ImageButton
+            android:id="@+id/btnGreen"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_color_green" />
+
+        <ImageButton
+            android:id="@+id/btnBlue"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_color_blue" />
+
+        <ImageButton
+            android:id="@+id/btnSize"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_size" />
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_undo" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_erase" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_save" />
+
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pen_gallery" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/drawing_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <com.androidbook.bookmarket.mypage.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>
