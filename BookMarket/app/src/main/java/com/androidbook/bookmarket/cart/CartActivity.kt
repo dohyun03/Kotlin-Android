@@ -125,7 +125,7 @@ class CartActivity : AppCompatActivity() {
                     }
 
                     alertDialog.setPositiveButton("예", listener)
-                    alertDialog.setNegativeButton("아니요", listener)
+                    alertDialog.setNegativeButton("아니오", listener)
                     alertDialog.show()
                 }
                 else Toast.makeText(this, "장바구니가 비어있습니다.", Toast.LENGTH_LONG).show()

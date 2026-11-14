@@ -7,11 +7,9 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
-
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -57,10 +55,7 @@ class BooksActivity : AppCompatActivity() {
             Toast.makeText(getApplicationContext(),"미라클 HTML5 + CSS3 + 자바스크립트", Toast.LENGTH_LONG).show()
             BookItem4()
         }
-
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
-
-
     }
     fun BookItem1(){
 
@@ -121,7 +116,7 @@ class BooksActivity : AppCompatActivity() {
         inflater.inflate(R.menu.menu_books, menu)
         // menuInflater.inflate(R.menu.menu_books,menu)
 
-        val searchItem:MenuItem? = menu?.findItem(R.id.menu_search)
+        /*val searchItem:MenuItem? = menu?.findItem(R.id.menu_search)
          val searchView: SearchView = searchItem?.actionView as SearchView
 
          searchView.queryHint = "도서명을 입력해주세요."
@@ -145,7 +140,7 @@ class BooksActivity : AppCompatActivity() {
 
            })
 
-
+ */
 
 
         return super.onCreateOptionsMenu(menu)

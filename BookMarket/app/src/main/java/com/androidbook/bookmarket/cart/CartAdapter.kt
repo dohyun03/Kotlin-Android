@@ -98,7 +98,7 @@ class CartAdapter( private val context: Context ) : RecyclerView.Adapter<CartAda
             }
 
             alertDialog.setPositiveButton("예", listener)
-            alertDialog.setNegativeButton("아니요", listener)
+            alertDialog.setNegativeButton("아니오", listener)
 
             alertDialog.show()
 

@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MenuActivity"/>
         <activity android:theme="@style/MyTheme.BookMarket"
             android:label="도서목록"
@@ -42,11 +43,29 @@
         <activity  android:theme="@style/MyTheme.BookMarket"
             android:label="나의 페이지"
             android:name=".mypage.MyPageActivity"/>
+
         <activity  android:theme="@style/MyTheme.BookMarket"
             android:label="메모장"
             android:name=".mypage.MemoActivity"/>
 
+        <activity android:theme="@style/MyTheme.BookMarket"
+            android:label="동영상강좌"
+            android:name=".ebook.EbookActivity" />
+        <activity  android:theme="@style/MyTheme.BookMarket"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="동영상강좌"
+            android:name=".ebook.EbookVideoActivity" />
 
+        <provider
+            android:authorities="com.androidbook.bookmarket.mypage.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
 
     </application>

@@ -90,7 +90,7 @@ class OrderActivity : AppCompatActivity() {
             }
 
             alertDialog.setPositiveButton("예", listener)
-            alertDialog.setNegativeButton("아니요", listener)
+            alertDialog.setNegativeButton("아니오", listener)
             alertDialog.show()
         }
 
